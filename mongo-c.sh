@@ -4,6 +4,9 @@ version="1.28.0"
 srcPath="./mongo-c-src"
 installPath="${HOME}/mongo-drv/mongo-c"
 
+mkdir .tmp
+cd .tmp
+
 #获取源代码
 git clone --depth 1 https://github.com/mongodb/mongo-c-driver.git --branch=${version} ${srcPath}
 
