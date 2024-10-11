@@ -1,9 +1,5 @@
-# mongo-drv
-ctpapi开发依赖库
-
-```json
 {
-    "clangd.path": "/home/remin/clangd/bin/clangd", //clangd路径
+    "clangd.path": "/home/remin/clangd/bin/clangd",
     "cmake.debugConfig": {
         "type": "lldb",
         "MIMode": "lldb",
@@ -11,7 +7,7 @@ ctpapi开发依赖库
         "args": [],
         "externalConsole": false,
         "env": {
-            "TERM": "xterm-256color" // 启用终端颜色支持
+            "TERM": "xterm-256color"
         },
         "setupCommands": [
             {
@@ -22,4 +18,3 @@ ctpapi开发依赖库
         ]
     }
 }
-```
