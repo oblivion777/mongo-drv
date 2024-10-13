@@ -1,8 +1,8 @@
 #!/bin/bash
 #clang
 tags="llvmorg-19.1.1"
-git git clone -b ${tags} --depth 1 https://github.com/llvm/llvm-project.git
-
+git clone -b ${tags} --depth 1 https://github.com/llvm/llvm-project.git ./.tmp/llvm-project-src
+cd ./.tmp/llvm-project-src
 #配置编译选项
 cmake -S llvm -B build -G Ninja \
       -DCMAKE_BUILD_TYPE=Release \
