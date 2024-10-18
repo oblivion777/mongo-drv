@@ -7,8 +7,8 @@ cd ./.tmp/llvm-project-src
 cmake -S llvm -B build -G Ninja \
       -DCMAKE_BUILD_TYPE=Release \
       -DLLVM_USE_LINKER=lld \
-      -DCMAKE_C_FLAGS="-O3" \
-      -DCMAKE_CXX_FLAGS="-O3" \
+      -DCMAKE_C_FLAGS="-O2" \
+      -DCMAKE_CXX_FLAGS="-O2" \
       -DCMAKE_C_COMPILER=clang \
       -DCMAKE_CXX_COMPILER=clang++ \
       -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;lldb;lld" \
